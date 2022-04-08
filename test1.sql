@@ -15,7 +15,7 @@ USE `CS336 Final`;
 DROP TABLE IF EXISTS `User-Account`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
- CREATE TABLE  `User-Account` (
+ CREATE TABLE IF NOT EXISTS `User-Account` (
  `username` varchar(20), 
  `password` varchar(20),
  `email address` varchar(30),
