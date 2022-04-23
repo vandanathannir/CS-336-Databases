@@ -5,7 +5,7 @@
   <base href="http://localhost/resources/">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href=https://www.iconpacks.net/icons/2/free-search-icon-3076-thumb.png>
   <title>Search</title>
   <style>
 
