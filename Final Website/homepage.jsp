@@ -11,7 +11,7 @@
 <div style = "font-family:Times New Roman; color:black; font-size: 18px;">
 
 	<!--Welcome text!-->
-	<p style = "text-align:center; font-size: 30px; border:2px; border-style: solid; padding: 0.5em">Welcome to Gregslist!</p>
+	<p style = "text-align:center; font-size: 30px; border:1px; border-style: solid; padding: 0.5em">Welcome to Gregslist!</p>
 	<hr width = 1900>
 	
 	<!--We need a landing page for searches!-->
