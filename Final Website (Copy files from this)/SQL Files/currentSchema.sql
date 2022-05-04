@@ -37,8 +37,6 @@ FROM `User-Account`
 where username = 'person1'; 
 
 UPDATE `User-Account` set password = 'password2' where username = 'person1';
-INSERT INTO `User-Account` VALUES(`bob1`,`bobrocks`,`bob@gmail.com`,`12 cool place`,`Bob`,`127-456-1234`);
-INSERT INTO `User-Account` VALUES('bob1','bobrocks','bob@gmail.com','12 cool place','Bob','127-456-1234');
 DELETE from `User-Account` where username ='';
 INSERT INTO `User-Account` ( `username`,`password`,`email address`, `address`,`name`,`phone number`) VALUES ('bob1','bobrocks','bob@gmail.com','12 cool place','127-456-1234','Bob');
 
@@ -67,20 +65,3 @@ SELECT *
 FROM `AuctionItem_Posts`;
 
 INSERT INTO `AuctionItem_Posts` ( `username`,`itemName`, `description`,`closingDate`,`closingTime`,`minimumPrice`) VALUES ('bob1','Book','Cool Book','2022-05-01','12:30','5.00');
-
-CREATE TABLE `Bidding`(
-`auctionId` int,
-`incrementPrice` float, 
-`biddingHistory`datetime,
-`buyerUsername` varchar(20), 
-primary key(`auctionId`, `buyerUsername`),
-foreign key(`auctionId`) references `AuctionItem_Posts`(`auctionId`) ,
-foreign key(`buyerUsername`) references `AuctionItem_Posts`(`buyerUsername`)
-)ENGINE=InnoDB DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
- 
-LOCK TABLES `Bidding` WRITE;
-/*!40000 ALTER TABLE `Bidding` DISABLE KEYS */;
-
-SELECT *
-FROM `Bidding`;

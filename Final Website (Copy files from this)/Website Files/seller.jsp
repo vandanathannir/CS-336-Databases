@@ -20,7 +20,7 @@ List an Item Below:
 <br>
 	<form method="post" action="listedItem.jsp">
 		<table>
-		<tr>
+		<tr>    
 		<td>Item Name</td><td><input type="text" name="itemName"></td>
 		</tr>
 		<tr>
@@ -40,6 +40,7 @@ List an Item Below:
 		<input type="submit" value="List Item">
 		</form>
 	<br>
-
+	
 </body>
 </html>
+

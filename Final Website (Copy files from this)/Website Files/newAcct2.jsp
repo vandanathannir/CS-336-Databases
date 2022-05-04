@@ -28,7 +28,7 @@
    	   	 	if(newName!="" && newUsername!="" && newPassword!="" && newEmail!="" && newPhone!="" && newAddress!="") 
    	   	 	{
     		
-	    		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/CS336 Final","root", "password");
+	    		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/CS336 Final","root", "720kickflip");
 	    		String SQL_INSERT = "INSERT INTO `User-Account` ( `username`,`password`,`email address`, `address`,`name`,`phone number`) VALUES (?,?,?,?,?,?)";
 	    		 
 	    		PreparedStatement ps = con.prepareStatement(SQL_INSERT);
