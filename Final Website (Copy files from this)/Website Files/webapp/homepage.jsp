@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,9 +40,10 @@
 	
 	<!--Text on the bottom of the page!-->
 	<div style = "position:fixed; bottom: -5px">	
-		<p>Gregslist© Copyright 2022. All rights reserved to Victor, Vandana, Kyle and Luca.</p>
+		<p>GregslistÂ© Copyright 2022. All rights reserved to Victor, Vandana, Kyle and Luca.</p>
 	</div>
 </div>
 
 </body>
 </html>
+

@@ -1,0 +1,19 @@
+We have a different search page implementatation that
+is currently located in the old files folder - we are
+going to try to combine the two at some point as they
+both have their benefits.
+
+Admin username is admin1 - admin pw is admin2
+
+Got the admin page to only appear on link's click when
+admin1 is logged in, otherwise it sends a request refused
+page
+
+Got the admin's creation of Customer Rep accounts to 
+work properly
+
+Changed the schema around a bit to add a few new tables
+and fields
+
+currently working on customer support & the rest of 
+adminfunctiionality

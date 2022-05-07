@@ -1,3 +1,6 @@
+/* THIS WAS VIC'S IMPLEMENTATION */
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -15,6 +18,11 @@
 <%@ page import="javax.servlet.http.*, javax.servlet.*" %>
 <%
 
+	String usNm = request.getParameter("usNm");
+	String itNm = request.getParameter("itNm");
+	String typeVehic = request.getParameter("typeVehic");
+    String maxPrice = request.getParameter("maxPrice");
+
 	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/CS336 Final","root", "720kickflip");
 	String SQL_SELECT = "SELECT * FROM `AuctionItem_Posts`";
 
@@ -28,10 +36,13 @@
     int updateQuery=0;
    	try 
    	{
+   		
    		Statement st=con.createStatement();
         ResultSet rs=st.executeQuery("SELECT * FROM AuctionItem_Posts;");
         
         while(rs.next()) {
+        	if(((usNm.equals(rs.getString("username"))) || usNm.equals("")) && ((itNm.equals(rs.getString("itemName"))) || itNm.equals("")))
+        	{
         	out.print("<tr>");
         	
         	out.print("<td>");
@@ -44,6 +55,7 @@
         	out.print(rs.getString("minimumPrice") + "     ");
         	
         	out.print("<br>");
+        	}
         }
         
         
